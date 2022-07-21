@@ -399,6 +399,15 @@ section .container {
   margin-bottom: 0;
 }
 
+/*
+Added by Akin
+*/
+#uni-ib {
+  background-color: white;
+  height:100px;
+}
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
