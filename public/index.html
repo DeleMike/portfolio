@@ -2,852 +2,2142 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akindele Michael — Software Engineer</title>
+  <meta name="description"
+    content="Akindele Michael — Software Engineer specialising in mobile apps, open-source infrastructure, and ML systems.">
 
-  <title>Akindele Michael</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
 
-  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons-2.1.2/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    :root {
+      --navy: #0A0F1E;
+      --navy2: #111827;
+      --navy3: #1E2A3B;
+      --indigo: #4F46E5;
+      --indigo2: #6366F1;
+      --amber: #F59E0B;
+      --green: #10B981;
+      --off: #F0EDE6;
+      --slate: #94A3B8;
+      --slate2: #64748B;
+      --white: #FFFFFF;
+      --card-bg: #141C2E;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--off);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-    gtag('config', 'UA-169007209-3');
-  </script>
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 5vw;
+      background: rgba(10, 15, 30, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      transition: background 0.3s;
+    }
 
+    .nav-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--amber);
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
 
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-  <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--slate);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--off);
+    }
+
+    .nav-cta {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--amber) !important;
+      border: 1px solid var(--amber);
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--amber);
+      color: var(--navy) !important;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--off);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: var(--navy2);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--off);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--amber);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 5vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(79, 70, 229, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 70, 229, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -20%;
+      left: -10%;
+      width: 70vw;
+      height: 70vw;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6rem;
+      width: 100%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      padding-top: 5rem;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--amber);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--amber);
+    }
+
+    .hero-name {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(3rem, 7vw, 6rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-name em {
+      font-style: italic;
+      color: var(--indigo2);
+    }
+
+    .hero-terminal {
+      margin: 1.8rem 0 2.4rem;
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      max-width: 560px;
+      overflow: hidden;
+    }
+
+    .terminal-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-r {
+      background: #FF5F57;
+    }
+
+    .dot-y {
+      background: #FFBD2E;
+    }
+
+    .dot-g {
+      background: #28CA41;
+    }
+
+    .terminal-body {
+      padding: 1rem 1.2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+    }
+
+    .t-line {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .t-prompt {
+      color: var(--green);
+    }
+
+    .t-cmd {
+      color: var(--off);
+    }
+
+    .t-out {
+      color: var(--slate);
+      margin-left: 1rem;
+    }
+
+    .t-out span {
+      color: var(--indigo2);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      background: var(--amber);
+      animation: blink 1s step-end infinite;
+      vertical-align: middle;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0
+      }
+    }
+
+    .hero-bio {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--slate);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-bio strong {
+      color: var(--off);
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--indigo);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      padding: 0.75rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--indigo2);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--off);
+      font-weight: 500;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      padding: 0.75rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--off);
+    }
+
+    .hero-photo-wrap {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: 300px;
+      height: 360px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow:
+        0 0 0 6px rgba(79, 70, 229, 0.1),
+        0 24px 60px rgba(0, 0, 0, 0.5);
+      display: block;
+    }
+
+    /* amber accent line beside photo */
+    .hero-photo-wrap::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 360px;
+      border-radius: 16px;
+      border: 2px solid var(--amber);
+      transform: translate(10px, 10px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-photo-wrap {
+      position: relative;
+    }
+
+    .hero-photo {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-socials {
+      position: absolute;
+      right: 5vw;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .hero-socials::before,
+    .hero-socials::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-socials a {
+      color: var(--slate2);
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .hero-socials a:hover {
+      color: var(--off);
+    }
+
+    /* ── SECTION BASE ── */
+    section {
+      padding: 6rem 5vw;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-label::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--amber);
+    }
+
+    .section-heading {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-sub {
+      color: var(--slate);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 520px;
+      margin-bottom: 3.5rem;
+      line-height: 1.7;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--navy2);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--slate);
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-text p strong {
+      color: var(--off);
+      font-weight: 500;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+    }
+
+    .stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--indigo2);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--slate);
+      margin-top: 0.3rem;
+    }
+
+    .about-interests h3 {
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--slate2);
+      margin-bottom: 1rem;
+      font-family: 'DM Mono', monospace;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: rgba(79, 70, 229, 0.12);
+      border: 1px solid rgba(79, 70, 229, 0.3);
+      color: var(--indigo2);
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience {}
+
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .tl-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+
+    .tl-dot {
+      position: absolute;
+      left: -2.4rem;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--indigo);
+      border: 2px solid var(--navy);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+    }
+
+    .tl-dot.amber {
+      background: var(--amber);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25);
+    }
+
+    .tl-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tl-role {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .tl-company {
+      font-size: 0.9rem;
+      color: var(--indigo2);
+      font-weight: 500;
+      margin-top: 0.15rem;
+      text-decoration: none;
+    }
+
+    .tl-company:hover {
+      text-decoration: underline;
+    }
+
+    .tl-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--slate2);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.25rem 0.7rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .tl-bullets {
+      margin-top: 0.8rem;
+      padding-left: 1rem;
+      list-style: none;
+    }
+
+    .tl-bullets li {
+      position: relative;
+      color: var(--slate);
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 0.4rem;
+      padding-left: 1rem;
+    }
+
+    .tl-bullets li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--indigo2);
+      font-size: 0.7rem;
+      top: 0.3rem;
+    }
+
+    .tl-bullets a {
+      color: var(--indigo2);
+      text-decoration: none;
+    }
+
+    .tl-bullets a:hover {
+      text-decoration: underline;
+    }
+
+    .tl-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .tl-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--slate2);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+    }
+
+    /* ── PROJECTS ── */
+    #projects {
+      background: var(--navy2);
+    }
+
+    .projects-filter {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--slate);
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--indigo);
+      border-color: var(--indigo);
+      color: var(--white);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .proj-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, transform 0.2s;
+      cursor: default;
+    }
+
+    .proj-card:hover {
+      border-color: rgba(79, 70, 229, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .proj-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .proj-icon {
+      font-size: 1.5rem;
+    }
+
+    .proj-links {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .proj-links a {
+      color: var(--slate2);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .proj-links a:hover {
+      color: var(--off);
+    }
+
+    .proj-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .proj-desc {
+      font-size: 0.875rem;
+      color: var(--slate);
+      font-weight: 300;
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .proj-footer {
+      margin-top: 1.2rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .proj-tech {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--indigo2);
+      background: rgba(79, 70, 229, 0.1);
+      padding: 0.2rem 0.55rem;
+      border-radius: 3px;
+    }
+
+    .proj-badge {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 3px;
+    }
+
+    .badge-featured {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--amber);
+    }
+
+    .badge-oss {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--green);
+    }
+
+    [data-cat="mobile"] {}
+
+    [data-cat="ml"] {}
+
+    [data-cat="backend"] {}
+
+    .proj-card.hidden {
+      display: none;
+    }
+
+    /* ── SKILLS ── */
+    #skills {}
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-group {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 1.4rem;
+    }
+
+    .skill-group-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1rem;
+    }
+
+    .skill-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-pill {
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--off);
+      padding: 0.3rem 0.75rem;
+      border-radius: 5px;
+    }
+
+    /* ── EDUCATION ── */
+    #education {
+      background: var(--navy2);
+    }
+
+    .edu-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 680px;
+      margin-bottom: 2rem;
+    }
+
+    .edu-inst {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .edu-degree {
+      font-size: 0.9rem;
+      color: var(--indigo2);
+      font-weight: 500;
+      margin-top: 0.2rem;
+    }
+
+    .edu-year {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--slate2);
+      margin-top: 0.2rem;
+    }
+
+    .edu-honour {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--amber);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .cert-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+
+    .cert-icon {
+      font-size: 1.2rem;
+      margin-top: 0.1rem;
+    }
+
+    .cert-name {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--off);
+      line-height: 1.4;
+    }
+
+    .cert-issuer {
+      font-size: 0.75rem;
+      color: var(--slate2);
+      margin-top: 0.2rem;
+    }
+
+    .cert-link {
+      font-size: 0.72rem;
+      color: var(--indigo2);
+      text-decoration: none;
+      margin-top: 0.3rem;
+      display: inline-block;
+    }
+
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      text-align: center;
+    }
+
+    .contact-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-inner .section-label {
+      justify-content: center;
+    }
+
+    .contact-inner .section-label::after {
+      display: none;
+    }
+
+    .contact-inner .section-label::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--amber);
+    }
+
+    .contact-email {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 300;
+      color: var(--white);
+      text-decoration: none;
+      display: block;
+      margin: 1.5rem 0;
+      transition: color 0.2s;
+    }
+
+    .contact-email:hover {
+      color: var(--indigo2);
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--slate);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-link:hover {
+      color: var(--off);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem 5vw;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--slate2);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer a {
+      color: var(--slate2);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--off);
+    }
+
+    /* ── SVG ICONS (inline) ── */
+    .ico {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      fill: currentColor;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner {
+        flex-direction: column;
+        padding-top: 5rem; /* Prevents the content from hiding behind the navbar */
+        gap: 3.5rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero-socials {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav {
+        padding: 0.9rem 4vw;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      section {
+        padding: 4rem 5vw;
+      }
+
+      .about-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s, transform 0.6s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
-
-    <div class="container">
-
-      <h1><a href="index.html">👋🏾 I'm Akindele Michael</a></h1>
-      <h2 style="color:#fff">I <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://docs.google.com/document/d/1PkEL14ablaXKcGWOrMtIafLEgktcX_RQDMfSFPj5eqo/edit?usp=sharing"
-              target="_blank" rel="noopener noreferrer"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="social-links">
-        <a href="https://twitter.com/_Akindele_Mike" target="_blank" class="twitter" rel="noopener noreferrer"><i
-            class="bx bxl-twitter" title="Twitter"></i></a>
-        <a href="https://www.linkedin.com/in/akindele-michael" target="_blank" class="linkedin"
-          rel="noopener noreferrer"><i class="bx bxl-linkedin" title="LinkedIn"></i></a>
-        <a href="https://www.github.com/DeleMike" target="_blank" class="github" rel="noopener noreferrer"><i
-            class="bx bxl-github" title="Github"></i></a>
-        <a href="mailto:akindelemichael65@gmail.com" target="_blank" class="gmail" rel="noopener noreferrer"><i
-            class="bx bxl-gmail" title="Gmail"></i></a>
-
-      </div>
-
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#hero">akindele.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Say Hello</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
     </div>
-  </header><!-- End Header -->
+  </nav>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#experience" onclick="toggleMenu()">Experience</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#education" onclick="toggleMenu()">Education</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Software Engineer</div>
+        <h1 class="hero-name">Akindele<br><em>Michael</em></h1>
 
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/pro_img_3.jpg" class="img-fluid" alt="Profile Picture">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p> I'm Akindele Michael and I am a better human life advocate.
-          I'm a passionate about building elegant mobile apps, open-source development and AI.
-          <br><br>
-          I am always found around systems that intersect between humans, AI and Software Engineering.
-          <br><br>
-          I have three (3) years of work experience in building mobile applications. I have also published a paper focusing on text generation portraying my focus on Deep Learning. 
-          <br><br>
-          I am also passionate about helping people grow and how technology can help build decent work and global economic growth for young people.
-          
-          </p>
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 28 February</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +234 904-022-7907</li>
-              </ul>
+        <div class="hero-terminal">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">~</span>
+              <span class="t-cmd">whoami</span>
             </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Ibadan, Oyo. Nigeria</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> akindelemichael65@gmail.com</li>
-              </ul>
+            <div class="t-line">
+              <span class="t-out">Mobile Engineer · Open-Source Contributor · ML Engineer</span>
             </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-code-box-fill" style="color: #ffbb2c;"></i>
-            <h3>Software Engineering</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-smartphone-line" style="color: #28a745;"></i>
-            <h3>Mobile App Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-fill" style="color: #5578ff;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-camera-3-line" style="color: #e80368;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class=" col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-english-input" style="color: #1c7d32;"></i>
-            <h3>Natural Language Processing</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-car-line" style="color: #f1081f;"></i>
-            <h3>Self-driving cars</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gamepad-line" style="color: #47aeff;"></i>
-            <h3>Game Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-football-line" style="color: #ffc107;"></i>
-            <h3>Developer Tooling</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/img/education/uni_ibadan.png" class="img-fluid" id="uni-ib" alt="University of Ibadan">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Sc. Computer Science, First Class (2018-2024)</em></p>
-            <!-- <h5 style="text-align:left;padding: 0px 10px;">April 2018 - Present</h5> -->
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Data Structures & Algorithms</li>
-              <li>Software Engineering & System Analysis</li>
-              <li>Progamming Analysis and Operating Systems</li>
-              <li>Database Systems</li>
-              <li>Machine Learning </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>Online Certification</h2>
-        </div>
-
-        <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Machine Learning</h4>
-                <div class="portfolio-links"></div>
-              </div>
+            <div class="t-line" style="margin-top:0.5rem">
+              <span class="t-prompt">~</span>
+              <span class="t-cmd">cat highlights.txt</span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/ai-programming.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AI Programming with Python</h4>
-                <div class="portfolio-links">
-                  <a href="https://graduation.udacity.com/confirm/R6CWEA5W" target="_blank" title="Certificate"
-                    rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+            <div class="t-line">
+              <span class="t-out">→ Wikimedia / Outreachy intern — <span>Scribe Server</span></span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/aws-foundations.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AWS Machine Learning Foundations</h4>
-                <div class="portfolio-links">
-                  <a href="https://confirm.udacity.com/GACLCCGW" target="_blank" title="Certificate"
-                    rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+            <div class="t-line">
+              <span class="t-out">→ B.Sc. Computer Science — <span>First Class, Uni. of Ibadan</span></span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/flutter_jpg.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Mobile App Development with Flutter</h4>
-                <div class="portfolio-links"></div>
-              </div>
+            <div class="t-line">
+              <span class="t-out">→ MLH Fellow at <span>GitHub</span> · 4+ yrs mobile eng.</span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/tech_support.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Technical Support Fundamentals</h4>
-                <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/certificate/P9PHQUB2LP2Y" target="_blank"
-                    title="Certificate" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project"
-            style="position: absolute; left: 0px; top: 218.875px;">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certification/google_it_cert.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Google IT Automation with Python</h4>
-                <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QXNFJN3CV9JG"
-                    target="_blank" title="Certificate" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- End Education Section -->
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;"><a href="https://eventspotng.com/" style="color:#12d640">EventSpot, Jos. Nigeria
-              </a><br> </h4>
-            <h5 style="text-align:left;">May 2024 - July 2024</h5>
-            <p style="text-align:left;color:#fff"><em>Mobile Engineer</em></p>
-            <ul style="text-align:left;">
-              <li>Created a mobile app that allows users to quickly find and attend popular events or events nearby.</li>
-              <li>App on Playstore <a href="https://play.google.com/store/apps/details?id=com.cthub.eventspot">here</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            
-            <h4 style="text-align:left;"><a href="https://farmmonitor.africa/" style="color:#12d640">Farm Monitor Africa, Abuja, Nigeria</a><br>
-            </h4>
-            <h5 style="text-align:left;">August 2022 - June 2024</h5>
-            <p style="text-align:left;color:#fff"><em>Mobile Engineer</em></p>
-            <ul style="text-align:left;">
-              <li>Created a mobile app that enables farmers to track, monitor and make informed decisions on their farms.</li>
-              <li>Implemented an inclusive offline architecture for the app, expanding the app's accessibility for disadvantaged
-                users.</li>
-              <li>Enhanced security for the app with the successful integration of a facial recognition feature.</li>
-              <li>Implemented a mapping function and geo-fencing that enables farmers to map and view their farm borders and space remotely with the help of our Satellite Crop Doctor.</li>
-              <li>Implemented complex UIs and engaged in design thinking process to improve the app's user experience.</li>
-              <li>App on Playstore <a href="https://play.google.com/store/apps/details?id=africa.farmmonitor.farm_monitor&pcampaignid=web_share">here</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;"><a href="https://fellowship.mlh.io/" style="color:#12d640">MLH Fellowship, New York. US</a><br> </h4>
-            <h5 style="text-align:left;">June 2023 - September 2023</h5>
-            <p style="text-align:left;color:#fff"><em>Software Engineering Intern</em></p>
-            <ul style="text-align:left;">
-              <li>I contributed to the development of an open-source web framework (Starfyre) which was sponsored by MLH and GitHub.</li>
-              <li>Worked on improving the Starfyre CLI by combining two commands into one, thereby making the CLI interaction friendlier.</li>
-              <li>Worked on the improvement of the ComponentParser, which ensured that developers of Starfyre do not write invalid pyml code, thereby reducing debugging time.</li>
-              <li>Spearheaded the development of file-based routing for Starfyre, which enables developers of Starfyre to implement navigation in the web applications, thereby improving dynamism in Starfyre apps.</li>
-              <li>Resolved fyre files importation, which enabled Starfyre developers to import custom-defined components and ensure modularity, thereby enhancing code readability and maintenance.</li>
-              <li>All my contributions to Starfyre is <a href="https://github.com/sparckles/starfyre/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike+">here</a> </li>
-            </ul>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;"><a href="https://schoolx.ng/" style="color:#12d640">Daveshoope, Uyo. Nigeria
-              </a><br> </h4>
-            <h5 style="text-align:left;">August 2020 - February 2021</h5>
-            <p style="text-align:left;color:#fff"><em>Mobile App Developer (Intern)
-              </em></p>
-            <ul style="text-align:left;">
-              <li>Learnt Flutter for mobile development.</li>
-              <li>Contributed to the development of SchoolX, an Edu-Tech app built with Flutter.</li>
-            </ul>
-          </div>
-        </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-  <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Featured projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Mobile-App</li>
-            <li data-filter=".filter-project">Project</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>Drazex</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <img src="assets/img/project/drazex.png" class="img-fluid" alt="Dark Theme" id>
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/drazex.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
+            <div class="t-line" style="margin-top:0.5rem">
+              <span class="t-prompt">~</span>
+              <span class="t-cmd">&#9646;</span><span class="cursor"></span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>EventSpot</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <img src="assets/img/project/eventspots/photo-portrait.png" class="img-fluid" alt="Dark Theme" id>
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/eventspot.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="hero-bio">
+          I build things that sit at the intersection of <strong>mobile software, backend systems, open-source
+            infrastructure, and AI</strong>.
+          Currently exploring how AI & Systems Technology can drive growth, improve society and expand access &
+          opportunity.
+        </p>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>Farm Monitor Corporate</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <!-- <img
-                src="assets/img/project/trivia_mockups/dashboard_top_light_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Light Theme" id="mobile"> -->
-              <img src="assets/img/project/corporate_fm_app.png" class="img-fluid" alt="Light Theme" id>
-            </div>
-
-            <div class="portfolio-info">
-
-              <div class="portfolio-links">
-                <a href="projects/farm_monitor_cor.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>Just Bored App</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <!-- <img
-                src="assets/img/project/trivia_mockups/dashboard_top_light_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Light Theme" id="mobile"> -->
-              <img src="assets/img/project/home_screen.png" class="img-fluid" alt="Dark Theme" id>
-            </div>
-
-            <div class="portfolio-info">
-
-              <div class="portfolio-links">
-                <a href="projects/just_bored.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>YorubaClarity</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <!-- <img
-                src="assets/img/project/trivia_mockups/dashboard_top_light_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Light Theme" id="mobile"> -->
-              <img src="assets/img/project/yc_app.png" class="img-fluid" alt="Light Theme" id>
-            </div>
-
-            <div class="portfolio-info">
-
-              <div class="portfolio-links">
-                <a href="projects/yoruba_clarity_app.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>Farm Monitor</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <!-- <img
-                src="assets/img/project/trivia_mockups/dashboard_top_light_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Light Theme" id="mobile"> -->
-              <img src="assets/img/project/fm_app-portrait.png" class="img-fluid" alt="Dark Theme" id>
-            </div>
-
-            <div class="portfolio-info">
-
-              <div class="portfolio-links">
-                <a href="projects/farm_monitor.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center>
-            <h4>Trivia App</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <div class="image-side-by-side">
-              <!-- <img
-                src="assets/img/project/trivia_mockups/dashboard_top_light_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Light Theme" id="mobile"> -->
-              <img
-                src="assets/img/project/trivia_mockups/dashboard_down_dark_samsung-galaxys20ultra-cosmicblack-portrait.png"
-                class="img-fluid" alt="Dark Theme" id>
-            </div>
-
-            <div class="portfolio-info">
-
-              <div class="portfolio-links">
-                <a href="projects/trivia.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox"
-                  title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <h4>Starfyre: A Python Web Framework</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/starfyre.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/starfyre.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <h4>Data Prep Engine</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/data_prep_eng.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <h4>Diacritizer API</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/diacritizer_api.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <h4>Churn Prediction System: Banking</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/bank-churn.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <br>
-            <h4>House Price Prediction</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/house_pricing.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <br>
-            <h4>Heart Disease Prediction</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/heart-disease.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center>
-            <br>
-            <h4>HapplySadlyFace</h4>
-          </center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/happy_sadly_face.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/heart-disease.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- End Project Section -->
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-            <p style="text-align:left;">
-              <img src="https://dart.dev/assets/shared/dart-logo-for-shares.png?2" alt="Dart Logo" height="70"
-                width="120">
-              <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50"
-                width="150">
-              <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="50" width="120">
-              <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
-                height="60" width="90">
-              <img src=" https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript"
-                height="50" width="50">
-              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" height="70"
-                width="130">
-              <img src="https://ourcodeworld.com/public-media/articles/articleocw-5d78ebb022d1e.webp" alt="MySQL"
-                height="70" width="130">
-
-            </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
-            style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Frameworks</h4>
-            <p style="text-align:left;">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Google-flutter-logo.svg/2560px-Google-flutter-logo.svg.png"
-                alt="Flutter Logo" width="110" height="40">
-              <!-- <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="vectorlogo.zone"> -->
-              <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node JS">
-              <!-- <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone"> -->`
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
-                alt="Scikit-Learn" width="90" height="70">
-              <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow">
-              <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="pytorch">
-              <img src="https://logos-world.net/wp-content/uploads/2021/08/Android-Logo.png" alt="Android-Logo"
-                width="90" height="50">
-
-
-            </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
-            style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Tools</h4>
-            <p style="text-align:left;">
-              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
-              <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS">
-              <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="GCP">
-              <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="Heroku">
-              <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
-              <img src=" https://shylasquill.files.wordpress.com/2015/03/techwtitl.gif" alt="Tech Writing" width="130"
-                height="70">
-
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Skills Section -->
-
-  <!-- Start Links section -->
-  <section id="links" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://docs.google.com/document/d/1PkEL14ablaXKcGWOrMtIafLEgktcX_RQDMfSFPj5eqo/edit?usp=sharing"
-            target="_blank" rel="noopener noreferrer" title="Resume">
-            <div class="icon"><i class="icofont-page"></i></div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg class="ico" viewBox="0 0 16 16">
+              <path d="M2 2h12v1H2z M2 5h10v1H2z M2 8h8v1H2z" />
+            </svg>
+            View Projects
           </a>
-          <h4 class="title"><a
-              href="https://docs.google.com/document/d/1PkEL14ablaXKcGWOrMtIafLEgktcX_RQDMfSFPj5eqo/edit?usp=sharing"
-              target="_blank" rel="noopener noreferrer">Resume</a></h4>
-          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
+          <a href="https://docs.google.com/document/d/158QXRtA_EIGPSgsTd07wnJvwhnSVt2fMIN_MHsoQE8Y/edit?usp=sharing"
+            target="_blank" rel="noopener noreferrer" class="btn-ghost">
+            Resume ↗
+          </a>
         </div>
+      </div>
 
+      <div class="hero-photo-wrap">
+        <img src="profile.jpeg" alt="Akindele Michael" class="hero-photo"
+          onerror="this.style.display='none'; this.parentElement.style.display='none';">
       </div>
     </div>
-  </section>
-  <!--End Links Section -->
 
+    </div>
 
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>Location</h3>
-            <p>Ibadan. Oyo,</p>
-            <p>Nigeria.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://twitter.com/_Akindele_Mike" target="_blank" class="twitter" rel="noopener noreferrer"><i
-                  class="bx bxl-twitter" title="Twitter"></i></a>
-              <a href="https://www.linkedin.com/in/akindele-michael" target="_blank" class="linkedin"
-                rel="noopener noreferrer"><i class="bx bxl-linkedin" title="LinkedIn"></i></a>
-              <a href="https://www.github.com/DeleMike" target="_blank" class="github" rel="noopener noreferrer"><i
-                  class="bx bxl-github" title="Github"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>akindelemichael65@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Mobile & WhatsApp</h3>
-            <p>+234 (0) 904-022-7907 <i>or</i> +234 (0) 811-087-0560</p>
-          </div>
-        </div>
-      </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
+    <!-- side socials -->
+    <div class="hero-socials">
+      <a href="https://github.com/DeleMike" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <svg class="ico" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/akindele-michael" target="_blank" rel="noopener" title="LinkedIn"
+        aria-label="LinkedIn">
+        <svg class="ico" viewBox="0 0 24 24">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/_Akindele_Mike" target="_blank" rel="noopener" title="Twitter / X"
+        aria-label="Twitter">
+        <svg class="ico" viewBox="0 0 24 24">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <a href="mailto:akindelemichael65@gmail.com" title="Email" aria-label="Email">
+        <svg class="ico" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+      </a>
     </div>
   </section>
 
-  <!-- End Contact Section -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["build stuffs.", "develop mobile apps with Flutter 💙.", "solve problems.", "contribute to open source.", "advocate for upskilling", "support decent work and economic growth.", "explore a lot of machine learning.", "am interested in Autonomous Systems.", "am interested in inclusive Speech Systems"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label reveal">About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-heading">Building at the intersection of humans, AI, and software</h2>
+        <p>
+          I'm a software engineer with a deep focus on <strong>mobile application development, backend systems,
+            open-source software, and applied machine learning.</strong>
+          I approach engineering as both a craft and a tool for social impact — every system I build is designed with
+          real people in mind.
+        </p>
+        <p>
+          Over 4+ years, I've shipped production mobile apps used by thousands, contributed to open-source dev tooling
+          at the Wikimedia Foundation & MLH Fellowship,
+          and contributed to AI by aiding the global NLP ecosystem by building a benchmark dataset for Yorùbá and
+          predictive analytics.
+          I hold a <strong>First Class degree in Computer Science</strong> from the University of Ibadan.
+        </p>
+        <p>
+          Outside of engineering, I care about technology's role in creating <strong>decent work and economic
+            growth</strong> for young Africans,
+          and I'm always looking for problems at the frontier worth solving.
+        </p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Years shipping production software</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1k+</div>
+            <div class="stat-label">App installs, Farm Monitor</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3.55</div>
+            <div class="stat-label">GPA — First Class Honours</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2×</div>
+            <div class="stat-label">Competitive internships (MLH, Outreachy)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-interests reveal">
+        <h2 class="section-heading" style="margin-bottom:1.5rem">Areas of interest</h2>
+        <div class="tag-list">
+          <span class="tag">Mobile Engineering</span>
+          <span class="tag">Open-Source Infrastructure</span>
+          <span class="tag">Natural Language Processing</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Developer Tooling</span>
+          <span class="tag">AI Governance & Public Policy</span>
+          <span class="tag">Inclusive AI</span>
+          <span class="tag">Go · Backend Systems</span>
+        </div>
+
+        <div style="margin-top:2.5rem">
+          <h3 class="section-label" style="margin-bottom:1rem">Location</h3>
+          <p style="color:var(--slate); font-size:0.9rem">Nigeria &nbsp;🇳🇬</p>
+        </div>
+
+        <div style="margin-top:2rem">
+          <h3 class="section-label" style="margin-bottom:1rem">Open to</h3>
+          <div class="tag-list">
+            <span class="tag">Remote roles</span>
+            <span class="tag">Contract roles</span>
+            <span class="tag">AI Fellowships & Internships</span>
+            <span class="tag">Open-source collaborations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="section-heading reveal">Where I've worked</h2>
+    <p class="section-sub reveal">A track record built on shipped products, open-source contributions, and
+      cross-functional collaboration.</p>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot amber"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Software Engineer/Revenue Officer(Debt Recovery & Compliance)</div>
+            <a href="https://www.nrs.gov.ng/" target="_blank" rel="noopener" class="tl-company">Nigeria Revenue
+              Service</a>
+          </div>
+          <span class="tl-date">Jul 2025 – Present</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Shifting towards Tax Automation & Intelligent Systems.</li>
+          <li>Manage debt recovery operations and compliance workflows for government revenue cases.</li>
+          <li>Pursuing Chartered Institute of Taxation of Nigeria (CITN) professional certification.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tl-tag">Go</span>
+          <span class="tl-tag">Python</span>
+          <span class="tl-tag">HTML/CSS/JS</span>
+          <span class="tl-tag">Flutter</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Software Engineer Intern</div>
+            <a href="https://www.wikimedia.org" target="_blank" rel="noopener" class="tl-company">Wikimedia Foundation —
+              Outreachy</a>
+          </div>
+          <span class="tl-date">Jun 2025 – Aug 2025</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Architected and built the production <strong><a href="https://scribe-server.toolforge.org/"
+                target="_blank" rel="noopener">Scribe-Server v1.0</a></strong> and contributed to <a
+              href="https://github.com/scribe-org/Scribe-Data/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener">Scribe-Data</a> & <a
+              href="https://github.com/scribe-org/Scribe-Android/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener">Scribe Android</a>.</li>
+          <li>Engineered the <a
+              href="https://github.com/scribe-org/Scribe-Server/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener">Scribe-Server</a></strong> ↔ <a
+              href="https://github.com/scribe-org/Scribe-Data/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener">Scribe-Data</a> sync infrastructure, enabling real-time data updates across
+            30+ supported languages.</li>
+          <li>Delivered 30+ merged PRs and issue resolutions across the <a href="https://github.com/scribe-org"
+              target="_blank" rel="noopener">Scribe Org</a> (100+ combined GitHub stars). </li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tl-tag">Go</span>
+          <span class="tl-tag">Python</span>
+          <span class="tl-tag">Bash</span>
+          <span class="tl-tag">Android(Kotlin)</span>
+          <span class="tl-tag">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Mobile App Engineer</div>
+            <a href="https://www.drazex.com/" target="_blank" rel="noopener" class="tl-company">Drazex App</a>
+          </div>
+          <span class="tl-date">Feb 2025 – Mar 2026</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Designed and built a complete production multi-tenant mobile app architecture for a logistics and travel
+            agency using Flutter.</li>
+          <li>Implemented secure payments with less than 0.01% issues. All payments are processed in-app through trusted
+            third-party providers(Stripe & PayPal), ensuring your financial information security.</li>
+          <li>Integrated websockets/streaming technology to implement real-time communications with application</li>
+          <li>App is live on the <a href="https://apps.apple.com/us/app/drazex/id6745257349" target="_blank"
+              rel="noopener" class="tl-company">App Store</a> and <a
+              href="https://play.google.com/store/apps/details?id=drazex.com.drazex_app" target="_blank" rel="noopener"
+              class="tl-company">Google Play Store</a> with hundreds of active users.</li>
+        </ul>
+        <div class="tl-tags">
+          <span class="tl-tag">Flutter</span>
+          <span class="tl-tag">Dart</span>
+          <span class="tl-tag">Payment Infra Integration</span>
+          <span class="tl-tag">Mobile Architecture</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Mobile App Engineer — FDAE NEEP Project</div>
+            <span class="tl-company">Ministry of Agriculture, Nigeria</span>
+          </div>
+          <span class="tl-date">Nov 2024 – Feb 2025</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Led design and delivery of a national-scale mobile app for the FDAE NEEP agri-extension programme,
+            deployed across all 36 states.</li>
+        </ul>
+        <div class="tl-tags"><span class="tl-tag">Flutter</span><span class="tl-tag">Dart</span><span
+            class="tl-tag">AgriTech</span></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Mobile App Engineer</div>
+            <a href="https://thenebula.tech/" target="_blank" rel="noopener" class="tl-company">The Nebula</a>
+          </div>
+          <span class="tl-date">Jun 2024 – Dec 2024</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Led development of an multi-tenant event management app serving thousands of users; available on the <a
+              href="https://play.google.com/store/apps/details?id=com.cthub.eventspot" target="_blank" rel="noopener"
+              class="tl-company">Google Play Store</a>.</li>
+        </ul>
+        <div class="tl-tags"><span class="tl-tag">Flutter</span><span class="tl-tag">Dart</span><span
+            class="tl-tag">Event Tech</span></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Mobile App Engineer</div>
+            <a href="https://farmmonitor.africa/" target="_blank" rel="noopener" class="tl-company">Farm Monitor
+              Africa</a>
+          </div>
+          <span class="tl-date">Aug 2022 – Jun 2024</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Built two production multi-tenant mobile apps enabling farmers to track, monitor, and make data-driven
+            decisions; grew installs from 100 → 1,000+.</li>
+          <li>Implemented inclusive offline architecture to expand accessibility for users in low-connectivity areas.
+          </li>
+          <li>Integrated facial recognition, GPS mapping, and geo-fencing features using Satellite Crop Doctor data.
+          </li>
+          <li><a href="https://play.google.com/store/apps/details?id=africa.farmmonitor.farm_monitor" target="_blank"
+              rel="noopener" class="tl-company">Farm Monitor Farmer App</a> and <a
+              href="https://play.google.com/store/apps/details?id=africa.farmmonitor.farm_monitor.corporate_app"
+              target="_blank" rel="noopener" class="tl-company">Farm Monitor Extension App</a>.</li>
+        </ul>
+        <div class="tl-tags"><span class="tl-tag">Flutter</span><span class="tl-tag">Dart</span><span
+            class="tl-tag">Firebase</span><span class="tl-tag">AgriTech</span></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Software Engineering Intern</div>
+            <a href="https://fellowship.mlh.io/" target="_blank" rel="noopener" class="tl-company">MLH Fellowship ×
+              GitHub</a>
+          </div>
+          <span class="tl-date">Jun 2023 – Sep 2023</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Contributed to <a href="https://github.com/sparckles/starfyre" target="_blank"
+              rel="noopener">Starfyre</a>, an open-source Python web framework.</li>
+          <li>Spearheaded file-based routing for Starfyre, enabling navigation within Starfyre applications.</li>
+          <li>Improved the ComponentParser to catch invalid pyml code and combined CLI commands for better developer UX.
+          </li>
+          <li>All contributions can be found <a
+              href="https://github.com/sparckles/starfyre/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike" target="_blank"
+              rel="noopener" class="tl-company">here</a>.</li>
+        </ul>
+        <div class="tl-tags"><span class="tl-tag">Python</span><span class="tl-tag">Bash</span><span
+            class="tl-tag">Linux</span><span class="tl-tag">Open-Source</span></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">Projects</div>
+    <h2 class="section-heading reveal">Things I've built</h2>
+    <p class="section-sub reveal">A selection of personal and professional projects spanning mobile apps, backend
+      systems, and ML.</p>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
+      <button class="filter-btn" onclick="filterProjects('backend')">Backend / Systems</button>
+      <button class="filter-btn" onclick="filterProjects('ml')">ML / AI</button>
+      <button class="filter-btn" onclick="filterProjects('oss')">Open-Source</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="proj-card reveal" data-cat="backend">
+        <div class="proj-card-top">
+          <span class="proj-icon">🔗</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/hallway" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Hallway</div>
+        <div class="proj-desc">A production-grade WebSocket server with a corresponding <a
+            href="https://hallway.pxxl.click/" target="_blank" rel="noopener" class="tl-company">web interface</a>.
+          Built to explore real-time communication at scale.</div>
+        <br>
+        <div class="proj-desc"><a href="https://github.com/DeleMike/hallway-ui" target="_blank" rel="noopener"
+            class="tl-company">Visit Hallway Web Interface Repository</a></div>
+        <div class="proj-footer">
+          <span class="proj-tech">WebSocket</span>
+          <span class="proj-tech">Node.js</span>
+          <span class="proj-badge badge-featured">Featured</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="mobile">
+        <div class="proj-card-top">
+          <span class="proj-icon">🛩️</span>
+          <div class="proj-links">
+            <a href="https://apps.apple.com/us/app/drazex/id6745257349" target="_blank" rel="noopener"
+              title="App Store">↗1</a>
+            <a href="https://play.google.com/store/apps/details?id=drazex.com.drazex_app" target="_blank" rel="noopener"
+              title="Play Store">↗2</a>
+          </div>
+        </div>
+        <div class="proj-name">Drazex App</div>
+        <div class="proj-desc">An early stage start-up, Drazex, helps connect you with verified travelers heading to
+          your package destination, making delivery affordable, fast, and reliable. Has over 100+ install.</div>
+        <div class="proj-desc">Two production mobile apps enabling farmers to track their farms, view satellite data,
+          and make AI-assisted agronomic decisions. Grew from 100 → 1,000+ installs.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">Multi-Tenancy</span>
+          <span class="proj-tech">Payment Infra Integration</span>
+          <span class="proj-badge badge-featured">Featured</span>
+          <span class="proj-tech">WebSockets Integration</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="backend">
+        <div class="proj-card-top">
+          <span class="proj-icon">🔍</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/scout" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Scout</div>
+        <div class="proj-desc">A universal directory onboarding tool — drop it into any folder and instantly understand
+          the codebase structure, dependencies, and entry points.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Developer Tooling</span>
+          <span class="proj-badge badge-featured">Featured</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="backend ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">🤖</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/aipply" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">AIpply</div>
+        <div class="proj-desc">An AI-powered <a href="https://aipply-web-app.web.app/" target="_blank" rel="noopener"
+            class="tl-company">Flutter Web App</a> + server that helps you apply for roles with more confidence — resume
+          analysis, tailored suggestions, and application tracking.</div>
+        <br>
+        <div class="proj-desc"><a href="https://github.com/DeleMike/aipply_app" target="_blank" rel="noopener"
+            class="tl-company">Visit AIpply Web Interface Repository</a></div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">AI/LLM</span>
+          <span class="proj-badge badge-featured">Featured</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="oss">
+        <div class="proj-card-top">
+          <span class="proj-icon">🦋</span>
+          <div class="proj-links">
+            <a href="https://github.com/scribe-org/Scribe-Server/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener" title="GitHub PRs">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Scribe-Server</div>
+        <div class="proj-desc">Open-source contributions to Scribe-Server (sponsored by Outreachy & WikiMedia).</div>
+        <br>
+        <div class="proj-desc">Scribe-Server is a backend service that provides the API by which data is available for
+          download within Scribe apps.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Go</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+          <span class="proj-badge badge-featured">Featured</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="oss">
+        <div class="proj-card-top">
+          <span class="proj-icon">🐝</span>
+          <div class="proj-links">
+            <a href="https://github.com/scribe-org/Scribe-Data/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener" title="GitHub PRs">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Scribe-Data</div>
+        <div class="proj-desc">Open-source contributions to Scribe-Data (sponsored by Outreachy & WikiMedia).</div><br>
+        <div class="proj-desc">Scribe-Data is a convenient command-line interface (CLI) for extracting and formatting
+          language data from Wikidata. Functionality includes allowing users to list, download, and manage language data
+          directly from the terminal.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Python</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="oss">
+        <div class="proj-card-top">
+          <span class="proj-icon">🗣️</span>
+          <div class="proj-links">
+            <a href="https://github.com/scribe-org/Scribe-Android/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike"
+              target="_blank" rel="noopener" title="GitHub PRs">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Scribe-Android</div>
+        <div class="proj-desc">Open-source contributions to Scribe-Data (sponsored by Outreachy & WikiMedia).</div><br>
+        <div class="proj-desc">Scribe-Android is a pack of Android keyboards for language learners. Features include
+          translation (beta), verb conjugation and word annotation that give users the tools needed to communicate with
+          confidence.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Android</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+
+
+      <div class="proj-card reveal" data-cat="mobile">
+        <div class="proj-card-top">
+          <span class="proj-icon">🌾</span>
+          <div class="proj-links">
+            <a href="https://play.google.com/store/apps/details?id=africa.farmmonitor.farm_monitor" target="_blank"
+              rel="noopener" title="Play Store">↗1</a>
+            <a href="https://play.google.com/store/apps/details?id=africa.farmmonitor.farm_monitor.corporate_app&hl=en"
+              target="_blank" rel="noopener" title="Play Store">↗2</a>
+          </div>
+        </div>
+        <div class="proj-name">Farm Monitor</div>
+        <div class="proj-desc">Two production mobile apps enabling farmers to track their farms, view satellite data,
+          and make AI-assisted agronomic decisions. Grew from 100 → 1,000+ installs.</div>
+        <div class="proj-desc">Two production mobile apps enabling farmers to track their farms, view satellite data,
+          and make AI-assisted agronomic decisions. Grew from 100 → 1,000+ installs.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">Firebase</span>
+          <span class="proj-tech">GPS / Geo-fencing</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="mobile">
+        <div class="proj-card-top">
+          <span class="proj-icon">🎟️</span>
+          <div class="proj-links">
+            <a href="https://play.google.com/store/apps/details?id=com.cthub.eventspot" target="_blank" rel="noopener"
+              title="Play Store">↗</a>
+          </div>
+        </div>
+        <div class="proj-name">EventSpot</div>
+        <div class="proj-desc">A mobile app that lets users quickly discover and attend popular events nearby. Built
+          end-to-end from architecture to Play Store release.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">Location Services</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">⚙️</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/data-prep-eng" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Data Preparation Engine</div>
+        <div class="proj-desc">ML pipeline process for preparing my data sources that will be fed into the model as I
+          build my Final Year project.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">Transfer-Learning</span>
+          <span class="proj-tech">Quantization</span>
+          <span class="proj-tech">ONNX Models</span>
+          <span class="proj-tech">ML</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="backend ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">🎛️</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/diacritizer_api" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Diacritizer API</div>
+        <div class="proj-desc">Package to deliver inference results of model produced for my Final Year Project.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Quantization</span>
+          <span class="proj-tech">Backend</span>
+          <span class="proj-tech">Flask</span>
+          <span class="proj-tech">ML</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="mobile ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">🗯️</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/Yoruba-Clarity" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Yoruba Clarity</div>
+        <div class="proj-desc">My Final Year Project Client Application.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">ML</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="oss">
+        <div class="proj-card-top">
+          <span class="proj-icon">🐍</span>
+          <div class="proj-links">
+            <a href="https://github.com/sparckles/starfyre/pulls?q=is%3Aclosed+is%3Apr+author%3ADeleMike+"
+              target="_blank" rel="noopener" title="GitHub PRs">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Starfyre — Python Web Framework</div>
+        <div class="proj-desc">Open-source contributions to Starfyre (sponsored by MLH/GitHub): implemented file-based
+          routing, improved the ComponentParser, and enhanced CLI ergonomics.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Python</span>
+          <span class="proj-badge badge-oss">Open-Source</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="mobile">
+        <div class="proj-card-top">
+          <span class="proj-icon">🎮</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/trivia" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Trivia App</div>
+        <div class="proj-desc">A full-featured trivia game with Flutter, published to the Play Store. Includes multiple
+          categories, scoring, and clean UI across light/dark themes.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Flutter</span>
+          <span class="proj-tech">Dart</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">🏦</span>
+          <div class="proj-links">
+            <a href="https://github.com/DeleMike/churn_modelling" target="_blank" rel="noopener" title="GitHub">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-name">Bank Churn Prediction</div>
+        <div class="proj-desc">ML system to predict banking customer churn using ensemble classifiers. Full data
+          pipeline from cleaning through model evaluation and explainability.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">scikit-learn</span>
+          <span class="proj-tech">ML</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" data-cat="ml">
+        <div class="proj-card-top">
+          <span class="proj-icon">😊</span>
+          <div class="proj-links"></div>
+        </div>
+        <div class="proj-name">HapplySadlyFace</div>
+        <div class="proj-desc">A facial expression recognition system classifying happy and sad expressions using a CNN
+          pipeline trained on labeled image data.</div>
+        <div class="proj-footer">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">TensorFlow</span>
+          <span class="proj-tech">Computer Vision</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="section-heading reveal">Tech stack</h2>
+    <p class="section-sub reveal">The tools and languages I reach for most.</p>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-items">
+          <span class="skill-pill">Dart</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Go</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">HTML / CSS</span>
+          <span class="skill-pill">Bash</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Mobile & Frontend</div>
+        <div class="skill-items">
+          <span class="skill-pill">Flutter</span>
+          <span class="skill-pill">Android SDK</span>
+          <span class="skill-pill">Firebase</span>
+          <span class="skill-pill">Real time comms with Websockets</span>
+          <span class="skill-pill">Offline Architecture</span>
+          <span class="skill-pill">Payments Infra Integration(Stripe/PayPal)</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">ML / AI</div>
+        <div class="skill-items">
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">scikit-learn</span>
+          <span class="skill-pill">Classical ML </span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Backend & Databases</div>
+        <div class="skill-items">
+          <span class="skill-pill">Golang</span>
+          <span class="skill-pill">WebSocket</span>
+          <span class="skill-pill">MySQL/Postgres</span>
+          <span class="skill-pill">REST APIs</span>
+
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Cloud & DevOps</div>
+        <div class="skill-items">
+          <span class="skill-pill">AWS</span>
+          <span class="skill-pill">Google Cloud</span>
+          <span class="skill-pill">Heroku</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Bash Scripting</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Other</div>
+        <div class="skill-items">
+          <span class="skill-pill">Open-Source Dev</span>
+          <span class="skill-pill">Technical Writing</span>
+          <span class="skill-pill">Jupyter</span>
+          <span class="skill-pill">Data Visualisation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label reveal">Education</div>
+    <h2 class="section-heading reveal">Academic background</h2>
+
+    <div class="edu-card reveal">
+      <div class="edu-inst">University of Ibadan — Nigeria</div>
+      <div class="edu-degree">Bachelor of Science, Computer Science</div>
+      <div class="edu-year">2018 – 2024</div>
+      <div class="edu-honour">★ First Class Honours — 3.55 / 4.00</div>
+      <div style="margin-top:1rem">
+        <p
+          style="font-size:0.8rem; color:var(--slate); margin-bottom:0.5rem; font-family:'DM Mono',monospace; letter-spacing:0.08em; text-transform:uppercase;">
+          Relevant coursework</p>
+        <div class="tag-list">
+          <span class="tag">Data Structures & Algorithms</span>
+          <span class="tag">Software Engineering</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Database Systems</span>
+          <span class="tag">Operating Systems</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-label reveal" style="margin-top:3rem; margin-bottom:0.5rem">Certifications</h3>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">Machine Learning Specialisation</div>
+          <div class="cert-issuer">Stanford / Coursera</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">Deep Learning Specialisation</div>
+          <div class="cert-issuer">DeepLearning.AI</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">AI Programming with Python</div>
+          <div class="cert-issuer">Udacity</div>
+          <a href="https://graduation.udacity.com/confirm/R6CWEA5W" target="_blank" rel="noopener"
+            class="cert-link">View ↗</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">AWS Machine Learning Foundations</div>
+          <div class="cert-issuer">Udacity / AWS</div>
+          <a href="https://confirm.udacity.com/GACLCCGW" target="_blank" rel="noopener" class="cert-link">View ↗</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">Mobile App Development with Flutter</div>
+          <div class="cert-issuer">Google</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">Google IT Automation with Python</div>
+          <div class="cert-issuer">Google / Coursera</div>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QXNFJN3CV9JG"
+            target="_blank" rel="noopener" class="cert-link">View ↗</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <span class="cert-icon">🎓</span>
+        <div>
+          <div class="cert-name">Technical Support Fundamentals</div>
+          <div class="cert-issuer">Google / Coursera</div>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/P9PHQUB2LP2Y" target="_blank"
+            rel="noopener" class="cert-link">View ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-heading reveal" style="font-size:clamp(1.6rem,3vw,2.2rem)">Let's build something together</h2>
+      <p class="section-sub reveal" style="margin:1rem auto 0; text-align:center">
+        Whether it's a new project, open-source collaboration, or just a conversation — my inbox is open.
+      </p>
+      <a href="mailto:akindelemichael65@gmail.com" class="contact-email reveal">akindelemichael65@gmail.com</a>
+      <div class="contact-links reveal">
+        <a href="https://github.com/DeleMike" target="_blank" rel="noopener" class="contact-link">
+          <svg class="ico" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/akindele-michael" target="_blank" rel="noopener" class="contact-link">
+          <svg class="ico" viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://twitter.com/_Akindele_Mike" target="_blank" rel="noopener" class="contact-link">
+          <svg class="ico" viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+          Twitter / X
+        </a>
+        <a href="https://docs.google.com/document/d/158QXRtA_EIGPSgsTd07wnJvwhnSVt2fMIN_MHsoQE8Y/edit?usp=sharing"
+          target="_blank" rel="noopener" class="contact-link">
+          📄 Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <span>akindele.dev — Akindele Michael Olawole</span>
+    <span>Designed &amp; built with intention ·🇳🇬</span>
+  </footer>
+
+
+  <script>
+    // Mobile menu
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    // Project filter
+    function filterProjects(cat) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('.proj-card').forEach(card => {
+        if (cat === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          const cats = card.dataset.cat || '';
+          card.classList.toggle('hidden', !cats.includes(cat));
+        }
+      });
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
